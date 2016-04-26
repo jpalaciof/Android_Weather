@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/imgSunCloud"
+            android:src="@drawable/cloudsun"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="59dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lvHorizontal"
+            android:layout_marginEnd="161dp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/imgSunCloud" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today"
+            android:id="@+id/txtDateH"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:layout_alignTop="@+id/imgSunCloud"
+            android:layout_alignStart="@+id/txtMonthDay" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6º"
+            android:textSize="70dp"
+            android:textColor="#000000"
+            android:id="@+id/txtMaxGradeH"
+            android:layout_below="@+id/txtDateH"
+            android:layout_toStartOf="@+id/imgSunCloud" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="April 26"
+            android:id="@+id/txtMonthDay"
+            android:textSize="10dp"
+            android:layout_alignTop="@+id/txtMaxGradeH"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6º"
+            android:id="@+id/txtMinGrade"
+            android:textSize="45dp"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/txtMaxGradeH" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Humedity: 94%"
+            android:id="@+id/txtHumedity"
+            android:layout_marginTop="38dp"
+            android:layout_below="@+id/txtMinGrade"
+            android:layout_alignStart="@+id/txtMonthDay" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pressure: 986 ltPs"
+            android:id="@+id/txtPressure"
+            android:layout_below="@+id/txtHumedity"
+            android:layout_alignLeft="@+id/txtMonthDay" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wind: 1 km/h SW"
+            android:id="@+id/txtWind"
+            android:layout_below="@+id/txtPressure"
+            android:layout_alignLeft="@+id/txtMonthDay" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location: Mountain View"
+            android:id="@+id/txtLocation"
+            android:layout_below="@+id/txtWind"
+            android:layout_alignLeft="@+id/txtMonthDay" />
+    </RelativeLayout>
+</LinearLayout>
