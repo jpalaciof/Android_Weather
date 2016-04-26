@@ -17,12 +17,6 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/frame">
 
-        <ListView
-            android:layout_width="wrap_content"
-            android:layout_height="257dp"
-            android:id="@+id/listView"
-            android:layout_gravity="left|bottom" />
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="251dp"
@@ -70,5 +64,12 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="34dp" />
         </RelativeLayout>
+
+        <FrameLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="255dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:id="@+id/container"></FrameLayout>
     </FrameLayout>
 </RelativeLayout>
