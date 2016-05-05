@@ -13,4 +13,10 @@
         android:id="@+id/action_map"
         android:title="Map Location"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/register"
+        android:title="Registrar telefono">
+
+    </item>
 </menu>
